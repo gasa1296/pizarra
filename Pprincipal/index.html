@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Pizarra</title>
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/pizarra.css">
+		<script src="js/jquery-3.3.1.slim.min.js"></script>
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="main.js"></script>
+	</head>
+	<header>
+		<div id="estilo">
+
+		</div>
+	</header>
+
+	<body>
+		<!--Container para presentacion del jugador-->
+		<div class="container-fluid" id="presentacion">
+			<div class="row justify-content-center">
+				<div class="col-sm-4 text-center">
+					<img class="img-fluid" id="imagen_jugador" src="" alt="">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<h1 class="text-center text-light" id="nombre_apellido"></h1>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col">
+					<h3 class="text-center text-light" id="equipo"></h3>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<h3 class="text-center text-light" id="altura"></h3>
+				</div>
+				<div class="col">
+					<h3 class="text-center text-light" id="peso"></h3>
+				</div>
+				<div class="col">
+					<h3 class="text-center text-light" id="firma"></h3>
+				</div>
+			</div>
+		</div>
+		<div id="juego">
+			<!--Container para estado del juego-->
+			<div class="container-fluid">
+				<div class="main row">
+					<div class="col-lg-4">
+						<img id="logo_equipo_visita" src="" alt="" class="img-fluid">
+						<div id="contrario">
+							<!--Tabla del equipo-->
+						</div>
+					</div>
+					<!--COLUMNA DEL MEDIO-->
+					<div class="col-lg-4 medio">
+						<div id="centro">
+							<img id="foto_centro" class="img-fluid" src="" alt="">
+							<h3 id="nombre_centro" class="nombre text-center text-light"></h3>
+							<table class="table table-bordered">
+								<thead class="pizarra text-center text-light">
+									<tr>
+										<th>VB</th>
+										<th>C</th>
+										<th>CI</th>
+										<th>BB</th>
+										<th>HR</th>
+									</tr>
+								</thead>
+								<tbody class="pizarra table-bordered text-center text-light">
+									<tr>
+										<td id="VB_centro"></td>
+										<td id="C_centro"></td>
+										<td id="CI_centro"></td>
+										<td id="BB_centro"></td>
+										<td id="HR_centro"></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<table class="table col-lg-12" id="actuacion">
+
+						</table>
+						<!-- INICIO Contador-->
+						<div id='contador'>
+							<table class="table">
+								<thead>
+									<tr>
+										<th class="pizarra-m">
+											<h2 class="m text-center" style=" color:#1DBB15;">B</h2>
+										</th>
+										<th class="pizarra-cuerpo-m">
+											<h2 id="bolas_contador" class="m text-center text-light"></h2>
+										</th>
+										<th class="pizarra-m">
+											<h2 class="m text-center" style=" color:#EAC314;">S</h2>
+										</th>
+										<th class="pizarra-cuerpo-m">
+											<h2 id="strikes_contador" class="m text-center text-light"></h2>
+										</th>
+										<th class="pizarra-m">
+											<h2 class="m text-center" style=" color:#C20505;">O</h2>
+										</th>
+										<th class="pizarra-cuerpo-m">
+											<h2 id="outs_contador" class="m text-center text-light"></h2>
+										</th>
+									</tr>
+								</thead>
+							</table>
+						</div>
+						<!--FIN Contador-->
+					</div>
+					<div class="col-lg-4">
+						<img id="logo_equipo_casa" src="" alt="" class="img-fluid">
+						<div id="casa">
+							<!--Tabla del equipo en Casa-->
+						</div>
+					</div>
+				</div>
+				<br>
+			</div>
+			<div class="row">
+				<div class="col-lg-12">
+					<!--Publicidad de Samsung LX-->
+					<img src="ejemplos/0099.png" alt="" class="img-fluid banner">
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>

@@ -1,0 +1,91 @@
+@font-face {
+font-family: BreeSerif;
+src: url("fonts/Bree_Serif/BreeSerif-Regular.ttf");
+}
+@font-face{
+	font-family: Oswald;
+	src: url("fonts/Oswald/Oswald-Regular.ttf");
+}
+@font-face{
+	font-family: OswaldBold;
+	src: url("fonts/Oswald/Oswald-Bold.ttf");
+}
+@font-face{
+	font-family: SourceSansPro;
+	src: url("fonts/Source_Sans_Pro/SourceSansPro-Bold.ttf");
+}
+body{
+	background-image: url(../ejemplos/fondopantalla-01.png);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	font-family: Impact;
+	font-size: 2rem!important;
+}
+.jugadores{
+	background-color: rgba(0,0,0,0.4)!important;
+	border: 1px solid rgb(255, 255, 255)!important;
+	border-left-style: hidden!important;
+	border-right-style: hidden!important;
+}
+.activo{
+	background-color: rgba(242,133,36,1)!important;
+	color: black!important;
+}
+.pizarra{
+	background-color: rgba(0,0,0,0.4)!important;
+	border-color:#fff;
+
+}
+.pizarra-pitcher{
+	background-color: rgba(0,0,0,0.4)!important;
+	border-top-style: hidden!important;
+	border-bottom-style: solid!important;
+	border-color:#fff;
+	font-family: OswaldBold;
+
+}
+.pizarra-cuerpo{
+	border-style: solid!important;
+	border-top-style: hidden!important;
+	border-color:#fff;
+}
+.medio{
+	position: relative!important;
+}
+.nombre{
+	position: absolute;
+	top:42.75%;/* 53.5% funciona para table-sm en la primera columna, se descuadra de no ser así. 57%, al 90% de tamaño de la pagina  */
+	left:50%;
+	width: 100%!important;
+	transform: translate(-50%, -50%)!important;
+	background-color: rgba(0,0,0,0.4)!important;
+	font-size: 3rem!important;
+
+}
+.pizarra-contrario{
+	background-color: rgba(164,125,125,1)!important;
+}
+.pizarra-m{
+	background-color: rgba(0,0,0,0.9)!important;
+	border-style: solid!important;
+	border-color: #fff;
+	border-width: 10%!important;
+}
+.pizarra-cuerpo-m{
+	border-style: solid!important;
+	border-color: #fff;
+	border-width: 5%!important;
+	
+}
+.m{
+	font-size: 3rem!important;
+}
+.banner{
+	padding: 0rem!important;
+	margin: 0rem!important;
+	margin-left: 2%!important;
+	margin-top: -3%!important;
+	width: 100%!important;
+	height: 95%!important;
+}
